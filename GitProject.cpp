@@ -56,11 +56,14 @@ public:
 int main() {
     EngineController engine;
 
+    int a;
+    printf("Enter RPM: ");
+    scanf("%d", &a);
+
     engine.startEngine();
-    engine.adjustRPM(3000);
+    engine.adjustRPM(a);
     engine.simulateTemperature();
     engine.stopEngine();
-    engine.simulateTemperature();
 
     return 0;
 }
