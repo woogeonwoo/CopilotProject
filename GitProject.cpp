@@ -45,7 +45,7 @@ public:
 
     void simulateTemperature() {
         if (isRunning) {
-            temperature = 20.0 + (std::rand() % 80); // Simulate temperature between 20 and 100 degrees
+            temperature = 20.0 + (rpm * 0.008); // Simulate temperature between 20 and 100 degrees
             printf("Current engine temperature: %.2f°C\n", temperature);
         } else {
             printf("Engine is not running. Temperature is stable at %.2f°C\n", temperature);
